@@ -28,10 +28,15 @@ client.user.setGame(`RUGAN SERVER`,"http://twitch.tv/sytra_ayman")
   console.log('')
 });
 
-client.on('message', message => {
-    if (message.content === '!') {
-        message.reply('**WELCOME TO RUGAN SERVER :tada: :champagne_glass: **');
-      }
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+         client.on('message', message => {
+            if (message.content === '!') {
+              message.channel.send('**WELCOME TO RUGAN SERVER :tada: :champagne_glass: **');
+               
+
+            }
 });
 
 
@@ -50,7 +55,7 @@ client.channels.find('id', '479944897663860736').setName("Welcome To R");
 client.channels.find('id', '479944897663860736').setName("Welcome To RU");
 client.channels.find('id', '479944897663860736').setName("Welcome To RUG");
 client.channels.find('id', '479944897663860736').setName("Welcome To RUGA");
-client.channels.find('id', '479944897663860736').setName("Welcome To RUGAN");
+client.channels.find('id', '479944897663860736').setName("Welcome To RUGAN ✨");
   }, 3000);
 });
 
