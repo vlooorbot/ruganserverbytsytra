@@ -203,7 +203,7 @@ client.on('voiceStateUpdate', (old, now) => {
 
 client.on('message', msg =>{
     let message=msg;
-    if(message.content.startsWith("-bc")){
+    if(message.content.startsWith("!bc")){
         var args = message.content.split(' ').slice(1).join(' ');
     msg.guild.members.forEach(m=>{
         m.send(args.replace(/[user]/g,m)).catch();
