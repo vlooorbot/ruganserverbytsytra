@@ -28,6 +28,13 @@ client.user.setGame(`NEVER FORGET`,"http://twitch.tv/sytra_ayman")
   console.log('')
 });
 
+client.on('message', message => {
+    if (message.content === '!') {
+        message.reply('**Welcome To NF CLAN :tada: :champagne_glass: **');
+      }
+});
+
+
 client.on("ready", async  => {
 setInterval(function(){
 client.channels.find('id', '479944897663860736').setName("W");
