@@ -4,7 +4,7 @@ const prefix = '!'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`NEVER FORGET`,"http://twitch.tv/sytra_ayman")
+client.user.setGame(`RUGAN SERVER`,"http://twitch.tv/sytra_ayman")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -30,7 +30,7 @@ client.user.setGame(`NEVER FORGET`,"http://twitch.tv/sytra_ayman")
 
 client.on('message', message => {
     if (message.content === '!') {
-        message.reply('**Welcome To NF CLAN :tada: :champagne_glass: **');
+        message.reply('**WELCOME TO RUGAN SERVER :tada: :champagne_glass: **');
       }
 });
 
